@@ -1,0 +1,43 @@
+window.VeracityMockData = {
+  statesData: {
+    "ac": { name:"Acre", region:"Norte", mentions:12000, fakeNews:14, risk:"low", topics:["Plano de Enfrentamento à Seca 2026","Redução de Queimadas","Reajuste Salarial dos Servidores","Planejamento para o El Niño"] },
+    "al": { name:"Alagoas", region:"Nordeste", mentions:45000, fakeNews:28, risk:"medium", topics:["Turismo Sustentável","Educação Rural","Segurança nas Praias","Pesquisa de Gás Natural"] },
+    "am": { name:"Amazonas", region:"Norte", mentions:89000, fakeNews:41, risk:"low", topics:["COP30","Garimpo Ilegal","Vazante dos Rios","Zona Franca de Manaus"] },
+    "ap": { name:"Amapá", region:"Norte", mentions:15000, fakeNews:8, risk:"low", topics:["Combate ao Garimpo Ilegal","Junho Verde","Sociobioeconomia","Geração de Empregos"] },
+    "ba": { name:"Bahia", region:"Nordeste", mentions:185000, fakeNews:92, risk:"medium", topics:["Reforma Agrária","Energia Eólica","Carnaval 2026","Indústria Naval"] },
+    "ce": { name:"Ceará", region:"Nordeste", mentions:110000, fakeNews:53, risk:"medium", topics:["Transição Energética","Porto do Pecém","Turismo no Litoral","Educação Profissional"] },
+    "df": { name:"Distrito Federal", region:"Centro-Oeste", mentions:195000, fakeNews:112, risk:"high", topics:["Reforma Tributária","Orçamento Federal","Segurança Institucional","Política Nacional"] },
+    "es": { name:"Espírito Santo", region:"Sudeste", mentions:58000, fakeNews:21, risk:"low", topics:["Porto de Tubarão","Mineração","Reflorestamento","Logística Ferroviária"] },
+    "go": { name:"Goiás", region:"Centro-Oeste", mentions:92000, fakeNews:49, risk:"medium", topics:["Agronegócio","Biodiversidade","Infraestrutura","Energia Solar"] },
+    "ma": { name:"Maranhão", region:"Nordeste", mentions:74000, fakeNews:36, risk:"medium", topics:["Porto de São Luís","Ferrovia Norte-Sul","Turismo Histórico","Pesca Sustentável"] },
+    "mg": { name:"Minas Gerais", region:"Sudeste", mentions:310000, fakeNews:142, risk:"high", topics:["Mineração de Ferro","Cultura e Turismo","Agronegócio","Infraestrutura Rodoviária"] },
+    "ms": { name:"Mato Grosso do Sul", region:"Centro-Oeste", mentions:48000, fakeNews:19, risk:"low", topics:["Pantanal","Agronegócio","Turismo Ecológico","Biodiversidade"] },
+    "mt": { name:"Mato Grosso", region:"Centro-Oeste", mentions:67000, fakeNews:31, risk:"medium", topics:["Desmatamento","Soja e Milho","Pecuária Sustentável","Rondônia"] },
+    "pa": { name:"Pará", region:"Norte", mentions:125000, fakeNews:58, risk:"medium", topics:["Ferrogão","Belém 2026","Mineração","Florestas Tropicais"] },
+    "pb": { name:"Paraíba", region:"Nordeste", mentions:52000, fakeNews:24, risk:"low", topics:["Turismo Costeiro","Cultura Popular","Educação","Energia Eólica"] },
+    "pe": { name:"Pernambuco", region:"Nordeste", mentions:142000, fakeNews:69, risk:"medium", topics:["Suape","Recife Antigo","Cultura Digital","Segurança Pública"] },
+    "pi": { name:"Piauí", region:"Nordeste", mentions:39000, fakeNews:15, risk:"low", topics:["Parque Nacional","Energia Solar","Turismo","Agricultura Familiar"] },
+    "pr": { name:"Paraná", region:"Sul", mentions:198000, fakeNews:88, risk:"high", topics:["Agronegócio","Porto de Paranaguá","Tecnologia","Segurança Pública"] },
+    "rj": { name:"Rio de Janeiro", region:"Sudeste", mentions:410000, fakeNews:284, risk:"high", topics:["Segurança Pública","Carnaval 2026","Petróleo e Gás","Turismo"] },
+    "rn": { name:"Rio Grande do Norte", region:"Nordeste", mentions:48000, fakeNews:18, risk:"low", topics:["Turismo","Energia Eólica","Salinas","Cultura"] },
+    "ro": { name:"Rondônia", region:"Norte", mentions:29000, fakeNews:12, risk:"low", topics:["Amazônia","Agronegócio","Madeira Sustentável","Ferrovias"] },
+    "rr": { name:"Roraima", region:"Norte", mentions:18000, fakeNews:22, risk:"high", topics:["Garimpo Ilegal","Fronteira","Indígenas","Energia"] },
+    "rs": { name:"Rio Grande do Sul", region:"Sul", mentions:220000, fakeNews:104, risk:"medium", topics:["Agronegócio","Tecnologia","Cultura Gaúcha","Porto de Rio Grande"] },
+    "sc": { name:"Santa Catarina", region:"Sul", mentions:135000, fakeNews:59, risk:"medium", topics:["Turismo","Tecnologia","Indústria","Portos"] },
+    "se": { name:"Sergipe", region:"Nordeste", mentions:31000, fakeNews:11, risk:"low", topics:["Petróleo","Turismo","Cultura","Educação"] },
+    "sp": { name:"São Paulo", region:"Sudeste", mentions:890000, fakeNews:412, risk:"high", topics:["FATEC e ETEC","Expansão do Metrô","Geração de Empregos","Segurança Pública","Mercado Imobiliário"] },
+    "to": { name:"Tocantins", region:"Norte", mentions:26000, fakeNews:9, risk:"low", topics:["Agronegócio","Energia","Meio Ambiente","Educação"] }
+  },
+  trendingTopics: [
+    { id:"t1",rank:"#1",name:"Implementação da Reforma Tributária",volume:"245K",category:"Política",risk:"high",state:"df" },
+    { id:"t2",rank:"#2",name:"Orçamento de Conservação da Amazônia",volume:"182K",category:"Meio Ambiente",risk:"low",state:"am" },
+    { id:"t3",rank:"#3",name:"Novo Subsídio de Saúde",volume:"134K",category:"Saúde",risk:"medium",state:"ba" },
+    { id:"t4",rank:"#4",name:"Transição Limpa da Rede Energética",volume:"98K",category:"Tecnologia",risk:"low",state:"pr" },
+    { id:"t5",rank:"#5",name:"Orçamento de Segurança Pública",volume:"87K",category:"Sociedade",risk:"high",state:"rj" },
+    { id:"t6",rank:"#6",name:"COP30 em Belém",volume:"76K",category:"Meio Ambiente",risk:"low",state:"pa" },
+    { id:"t7",rank:"#7",name:"Expansão do Metrô de São Paulo",volume:"65K",category:"Infraestrutura",risk:"low",state:"sp" },
+    { id:"t8",rank:"#8",name:"Combate ao Garimpo Ilegal",volume:"54K",category:"Meio Ambiente",risk:"high",state:"am" },
+    { id:"t9",rank:"#9",name:"Reforma Agrária Nacional",volume:"48K",category:"Política",risk:"medium",state:"ba" },
+    { id:"t10",rank:"#10",name:"Porto de Suape",volume:"42K",category:"Economia",risk:"low",state:"pe" }
+  ]
+};

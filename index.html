@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veracity — Detecção e Combate a Fake News com IA</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" href="/assets/favicon.png">
+</head>
+<body>
+ 
+<!-- HEADER -->
+<header class="site-header" id="site-header">
+  <div class="container header-inner">
+    <a href="#" class="logo" aria-label="Veracity Início">
+      <div class="logo-mark" aria-hidden="true">
+        <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:12px;height:12px;">
+          <path d="M8 1L14 4V8.5C14 11.5 11.5 14 8 15C4.5 14 2 11.5 2 8.5V4L8 1Z" fill="white" fill-opacity="0.9"/>
+          <path d="M5.5 8L7 9.5L10.5 6" stroke="rgba(22,163,74,1)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </div>
+      Veracity
+    </a>
+    <nav aria-label="Navegação principal">
+      <ul class="nav-links">
+        <li><a href="#">Início</a></li>
+        <li><a href="#analyzer">Analisador</a></li>
+        <li><a href="#radar">Radar</a></li>
+        <li><a href="#contact">Contato</a></li>
+      </ul>
+    </nav>
+    <div class="nav-cta-group">
+      <a href="#analyzer" class="btn btn-primary btn-sm">Verificar Conteúdo</a>
+    </div>
+    <button class="menu-toggle" id="menu-toggle" aria-expanded="false" aria-label="Abrir menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <nav class="nav-menu-mobile" id="mobile-nav" aria-label="Navegação mobile">
+    <ul>
+      <li><a href="#">Início</a></li>
+      <li><a href="#analyzer">Analisador</a></li>
+      <li><a href="#radar">Radar</a></li>
+      <li><a href="#contact">Contato</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+<!-- =====================================================================
+     HERO
+     ===================================================================== -->
+<section class="hero-section" aria-labelledby="hero-title">
+  <div class="container hero-grid">
+    <div class="hero-content">
+      <div class="hero-eyebrow reveal">
+        <span class="pulse" aria-hidden="true"></span>
+        Inteligência Artificial Contra Fake News
+      </div>
+      <h1 class="hero-title reveal reveal-delay-1" id="hero-title">
+        Combata a desinformação<br>com <em>precisão</em>.
+      </h1>
+      <p class="hero-sub reveal reveal-delay-2">
+        A Veracity usa IA avançada para analisar conteúdo, cruzar com fontes confiáveis e fornecer um veredicto claro e baseado em evidências em segundos.
+      </p>
+      <div class="hero-actions reveal reveal-delay-3">
+        <a href="#analyzer" class="btn btn-primary">Analisar Conteúdo</a>
+        <a href="#radar" class="btn btn-ghost">Ver Radar Ao Vivo</a>
+      </div>
+      <div class="trust-row reveal reveal-delay-4">
+        <div class="trust-item">
+          <div class="trust-icon" aria-hidden="true">
+            <svg viewBox="0 0 10 10"><path d="M2 5l2.5 2.5L8 3"/></svg>
+          </div>
+          Análise com IA
+        </div>
+        <div class="trust-item">
+          <div class="trust-icon" aria-hidden="true">
+            <svg viewBox="0 0 10 10"><path d="M2 5l2.5 2.5L8 3"/></svg>
+          </div>
+          Rede de Fontes Confiáveis
+        </div>
+        <div class="trust-item">
+          <div class="trust-icon" aria-hidden="true">
+            <svg viewBox="0 0 10 10"><path d="M2 5l2.5 2.5L8 3"/></svg>
+          </div>
+          Resultados em Segundos
+        </div>
+        <div class="trust-item">
+          <div class="trust-icon" aria-hidden="true">
+            <svg viewBox="0 0 10 10"><path d="M2 5l2.5 2.5L8 3"/></svg>
+          </div>
+          Privacidade Primeiro
+        </div>
+      </div>
+    </div>
+
+ 
+    <div class="hero-visual" aria-hidden="true">
+      <!-- Main dashboard card -->
+      <div class="dashboard-card">
+        <div class="dc-header">
+          <div class="dc-dots">
+            <div class="dc-dot"></div>
+            <div class="dc-dot"></div>
+            <div class="dc-dot"></div>
+          </div>
+        <div class="dc-badge">
+          <div class="dc-badge-dot"></div>
+          Analisando ao vivo
+        </div>
+        </div>
+ 
+        <div class="dc-score-row">
+          <div class="dc-metric">
+            <div class="dc-metric-val green">94%</div>
+            <div class="dc-metric-label">Confiabilidade</div>
+          </div>
+          <div class="dc-metric">
+            <div class="dc-metric-val">12</div>
+            <div class="dc-metric-label">Fontes</div>
+          </div>
+          <div class="dc-metric">
+            <div class="dc-metric-val amber">Baixo</div>
+            <div class="dc-metric-label">Risco</div>
+          </div>
+        </div>
+ 
+        <div class="dc-bar-section">
+          <div class="dc-bar-label">
+            <span>Consistência factual</span>
+            <span style="color:var(--green-600);font-weight:700;">91%</span>
+          </div>
+          <div class="dc-bar-track">
+            <div class="dc-bar-fill green" style="width:91%"></div>
+          </div>
+        </div>
+        <div class="dc-bar-section">
+          <div class="dc-bar-label">
+            <span>Manipulação emocional</span>
+            <span style="color:var(--amber-500);font-weight:700;">23%</span>
+          </div>
+          <div class="dc-bar-track">
+            <div class="dc-bar-fill amber" style="width:23%"></div>
+          </div>
+        </div>
+        <div class="dc-bar-section">
+          <div class="dc-bar-label">
+            <span>Sinais de desinformação</span>
+            <span style="color:var(--red-500);font-weight:700;">8%</span>
+          </div>
+          <div class="dc-bar-track">
+            <div class="dc-bar-fill red" style="width:8%"></div>
+          </div>
+        </div>
+ 
+        <div class="dc-footer">
+          <span class="dc-shield">🛡️</span>
+          Conteúdo verificado pela Veracity AI — 3 referências cruzadas
+        </div>
+      </div>
+ 
+      <!-- Float accent 1 -->
+      <div class="float-accent float-accent-1">
+        <div class="fa-label">Sinalizações de hoje</div>
+        <div class="fa-value red">+328</div>
+        <div class="fa-bar">
+          <div class="fa-bar-fill" style="width:62%;background:linear-gradient(90deg,var(--red-600),var(--red-500));height:100%;border-radius:3px;"></div>
+        </div>
+      </div>
+ 
+      <!-- Float accent 2 -->
+      <div class="float-accent float-accent-2">
+        <div class="fa-label">Fontes verificadas</div>
+        <div class="fa-value green">950</div>
+        <div class="fa-bar">
+          <div class="fa-bar-fill" style="width:82%;background:linear-gradient(90deg,var(--green-600),var(--green-400));height:100%;border-radius:3px;"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+ 
+<!-- =====================================================================
+     ANALYZER SECTION
+     ===================================================================== -->
+<section id="analyzer" class="analyzer-section" aria-labelledby="analyzer-title">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-eyebrow">Inteligência de Conteúdo</span>
+      <h2 id="analyzer-title">Analise qualquer afirmação em segundos</h2>
+      <p>Cole uma manchete, trecho de artigo, post de redes sociais ou URL. Nossa IA cruza com milhares de fontes verificadas e retorna um veredicto transparente.</p>
+    </div>
+ 
+    <div class="analyzer-grid">
+      <!-- Form -->
+      <div class="glass analyzer-form reveal">
+        <div class="form-field">
+          <label class="form-label" for="content-input">Conteúdo para analisar</label>
+          <textarea
+            class="form-textarea"
+            id="content-input"
+            placeholder="Cole uma manchete de notícia, trecho de artigo, URL ou post de redes sociais aqui..."
+            required
+            aria-required="true"
+          ></textarea>
+        </div>
+        <div class="form-row">
+          <div class="form-select-wrap">
+            <label class="form-label" for="content-type">Tipo de conteúdo</label>
+            <select class="form-select" id="content-type">
+              <option value="news">Artigo de Notícia</option>
+              <option value="url">URL</option>
+              <option value="social">Post de Redes Sociais</option>
+              <option value="headline">Manchete</option>
+              <option value="other">Outro</option>
+            </select>
+          </div>
+          <button class="btn-analyze" id="analyze-btn" aria-label="Analisar conteúdo">
+            <div class="btn-spinner" aria-hidden="true"></div>
+            <span class="btn-text">Analisar →</span>
+          </button>
+        </div>
+      </div>
+ 
+      <!-- Result -->
+      <div class="glass result-card reveal reveal-delay-1" id="result-card" aria-live="polite" aria-atomic="true">
+        
+        <!-- Empty State -->
+        <div class="result-state result-empty" id="result-empty">
+          <div class="empty-icons">
+            <div class="empty-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="11" cy="11" r="8"></circle>
+                <path d="m21 21-4.3-4.3"></path>
+              </svg>
+            </div>
+            <div class="empty-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+              </svg>
+            </div>
+            <div class="empty-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 2a2 2 0 0 1 2 2c0 .74-.4 1.39-1 1.73V7h1a7 7 0 0 1 7 7h1a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-1v1a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-1H2a1 1 0 0 1-1-1v-3a1 1 0 0 1 1-1h1a7 7 0 0 1 7-7h1V5.73c-.6-.34-1-.99-1-1.73a2 2 0 0 1 2-2z"></path>
+                <path d="M9 13h6"></path>
+                <path d="M12 10v6"></path>
+              </svg>
+            </div>
+            <div class="empty-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                <polyline points="22 4 12 14.01 9 11.01"></polyline>
+              </svg>
+            </div>
+          </div>
+          <p class="empty-text">Nenhuma análise realizada.</p>
+          <p class="empty-subtext">Digite ou cole uma notícia, manchete ou URL e clique em "Analisar Conteúdo" para visualizar os resultados.</p>
+        </div>
+
+        <!-- Loading State -->
+        <div class="result-state result-loading hidden" id="result-loading">
+          <div class="loading-spinner" aria-hidden="true"></div>
+          <div class="loading-pulse-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+            </svg>
+          </div>
+          <p class="loading-text" id="loading-text">Analisando conteúdo...</p>
+          <div class="loading-progress">
+            <div class="loading-progress-bar" id="loading-progress-bar"></div>
+          </div>
+        </div>
+
+        <!-- Result Content -->
+        <div class="result-content hidden" id="result-content">
+          <div class="result-top">
+            <span class="result-title">Resultado da Análise</span>
+            <span class="result-verdict" id="result-verdict">—</span>
+          </div>
+          <div class="metrics-row">
+            <div class="metric-pill">
+              <div class="metric-pill-val green" id="res-score">—</div>
+              <div class="metric-pill-label">Confiabilidade</div>
+            </div>
+            <div class="metric-pill">
+              <div class="metric-pill-val" id="res-sources">—</div>
+              <div class="metric-pill-label">Fontes</div>
+            </div>
+            <div class="metric-pill">
+              <div class="metric-pill-val" id="res-risk">—</div>
+              <div class="metric-pill-label">Nível de Risco</div>
+            </div>
+          </div>
+          <div class="result-summary-box">
+            <strong>Resumo da IA</strong>
+            <span id="res-summary"></span><span class="cursor-blink hidden" id="cursor" aria-hidden="true"></span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+ 
+<!-- =====================================================================
+     RADAR SECTION
+     ===================================================================== -->
+<section id="radar" class="radar-section" aria-labelledby="radar-title">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-eyebrow">Inteligência em Tempo Real</span>
+      <h2 id="radar-title">Radar de Fake News do Brasil</h2>
+      <p>Monitoramento em tempo real de tópicos em alta e potenciais focos de desinformação em todos os estados brasileiros.</p>
+    </div>
+ 
+    <!-- Stats -->
+    <div class="stats-row">
+      <div class="glass stat-tile reveal">
+        <span class="stat-val" id="stat-topics">1.250</span>
+        <span class="stat-desc">Tópicos Monitorados</span>
+      </div>
+      <div class="glass stat-tile reveal reveal-delay-1">
+        <span class="stat-val" id="stat-mentions">2,4M</span>
+        <span class="stat-desc">Menções Analisadas Hoje</span>
+      </div>
+      <div class="glass stat-tile reveal reveal-delay-2">
+        <span class="stat-val alert" id="stat-fake">328</span>
+        <span class="stat-desc">Fake News Detectadas</span>
+      </div>
+      <div class="glass stat-tile reveal reveal-delay-3">
+        <span class="stat-val" id="stat-sources">950</span>
+        <span class="stat-desc">Fontes Verificadas</span>
+      </div>
+    </div>
+ 
+    <!-- Radar workspace -->
+    <div class="radar-workspace">
+      <!-- Left: trending list -->
+      <div class="reveal">
+        <div class="panel-header">
+          <span class="panel-title">Assuntos em Alta</span>
+          <span class="live-badge" aria-label="Dados ao vivo">
+            <span class="live-dot" aria-hidden="true"></span>
+            Ao Vivo
+          </span>
+        </div>
+        
+        <!-- Search Input -->
+        <div class="search-wrap">
+          <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="11" cy="11" r="8"></circle>
+            <path d="m21 21-4.3-4.3"></path>
+          </svg>
+          <input type="text" class="search-input" id="state-search" placeholder="Pesquisar estado ou assunto..." aria-label="Pesquisar estado ou assunto">
+        </div>
+        
+        <div class="trending-list" id="trending-list" role="listbox" aria-label="Assuntos em alta — clique para destacar no mapa"></div>
+      </div>
+ 
+      <!-- Right: map + tooltip -->
+      <div class="map-panel reveal reveal-delay-1">
+        <div class="map-panel-header">
+          <h3 class="map-panel-title" id="map-view-title">Visão Nacional</h3>
+          <button id="reset-map-btn" class="btn btn-ghost btn-sm hidden" aria-label="Redefinir visualização do mapa">Redefinir</button>
+        </div>
+    <div id="br_map_wrapper" style="position:relative;flex:1;min-height:420px;overflow:hidden;"></div>
+        <div class="map-legend" aria-label="Legenda de nível de risco">
+          <div class="legend-item"><div class="legend-dot low"></div> Baixo Risco</div>
+          <div class="legend-item"><div class="legend-dot medium"></div> Médio Risco</div>
+          <div class="legend-item"><div class="legend-dot high"></div> Alto Risco</div>
+        </div>
+      </div>
+      
+      <!-- Floating Info Card -->
+      <div class="floating-info-card hidden" id="floating-info-card">
+        <div class="fic-header">
+          <h3 class="fic-state-name" id="fic-state-name">São Paulo</h3>
+          <span class="fic-region-badge" id="fic-region-badge">Sudeste</span>
+        </div>
+        <div class="fic-content">
+          <div class="fic-news-title" id="fic-news-title">📰 FATEC e ETEC realizam processos seletivos</div>
+          <p class="fic-description" id="fic-description">Milhares de estudantes disputam vagas para o segundo semestre de 2026.</p>
+        </div>
+        <div class="fic-status">
+          <span class="fic-status-dot"></span>
+          <span class="fic-status-text">Monitoramento Ativo</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- =====================================================================
+     QUIZ SECTION - FATO OU FAKE?
+     ===================================================================== -->
+<section id="quiz" class="quiz-section" aria-labelledby="quiz-title">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-eyebrow">Teste Suas Habilidades</span>
+      <h2 id="quiz-title">Fato ou Fake?</h2>
+      <p>Você consegue identificar desinformação antes que ela se espalhe? Teste suas habilidades de verificação em apenas alguns minutos.</p>
+    </div>
+
+    <div class="quiz-container reveal reveal-delay-1">
+      <!-- Progress Bar -->
+      <div class="quiz-progress">
+        <div class="quiz-progress-info">
+          <span class="quiz-progress-text">Desafio <span id="current-question">1</span> de <span id="total-questions">10</span></span>
+          <span class="quiz-progress-percent" id="progress-percent">0%</span>
+        </div>
+        <div class="quiz-progress-bar">
+          <div class="quiz-progress-fill" id="progress-fill" style="width: 0%"></div>
+        </div>
+      </div>
+
+      <!-- Score Display (Live) -->
+      <div class="quiz-score-live">
+        <div class="score-item correct">
+          <span class="score-label">Corretas</span>
+          <span class="score-value" id="correct-count">0</span>
+        </div>
+        <div class="score-item incorrect">
+          <span class="score-label">Incorretas</span>
+          <span class="score-value" id="incorrect-count">0</span>
+        </div>
+      </div>
+
+      <!-- Challenge Card -->
+      <div class="quiz-content" id="quiz-content">
+        <div class="challenge-card glass" id="challenge-card">
+          <!-- Card Header -->
+          <div class="card-header">
+            <div class="card-meta">
+              <span class="card-category" id="quiz-category">Saúde</span>
+              <span class="card-date" id="quiz-date">2 horas atrás</span>
+            </div>
+          </div>
+
+          <!-- Card Body -->
+          <div class="card-body">
+            <div class="card-headline" id="quiz-headline">
+              Cientistas confirmam que beber café dobra a expectativa de vida
+            </div>
+            <div class="card-source">
+              <span class="source-icon">📰</span>
+              <span id="quiz-source">MundoSaudeNoticias24.com</span>
+            </div>
+          </div>
+
+          <!-- Card Question -->
+          <div class="card-question">
+            <div class="question-text" id="quiz-question">Você confiaria nesta informação?</div>
+          </div>
+
+          <!-- Action Buttons -->
+          <div class="card-actions">
+            <button class="btn-action btn-trust" id="btn-trust" aria-label="Confiar nesta informação">
+              <span class="btn-icon">✓</span>
+              <span class="btn-text">SIM</span>
+            </button>
+            <button class="btn-action btn-suspicious" id="btn-suspicious" aria-label="Marcar como suspeito">
+              <span class="btn-icon">⚠</span>
+              <span class="btn-text">NÃO</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Feedback Card -->
+        <div class="feedback-card glass hidden" id="quiz-feedback">
+          <div class="feedback-header">
+            <div class="feedback-icon" id="feedback-icon"></div>
+            <div class="feedback-title" id="feedback-title"></div>
+          </div>
+          <div class="feedback-body">
+            <div class="feedback-explanation" id="feedback-explanation"></div>
+            <div class="feedback-tip">
+              <strong>🔍 Dica de Verificação:</strong>
+              <span id="feedback-tip"></span>
+            </div>
+          </div>
+          <button class="btn btn-primary quiz-next-btn" id="next-question-btn">
+            Próximo Desafio →
+          </button>
+        </div>
+      </div>
+
+      <!-- Final Results -->
+      <div class="quiz-score hidden" id="quiz-score">
+        <div class="quiz-score-card glass">
+          <div class="quiz-score-badge" id="score-badge"></div>
+          <div class="quiz-score-title">Desafio Concluído!</div>
+          <div class="quiz-score-value">
+            <span id="final-score">0</span>/<span id="total-score">10</span>
+          </div>
+          <div class="quiz-score-percent" id="final-percent">0%</div>
+          <div class="quiz-score-message" id="score-message"></div>
+          <div class="quiz-score-details">
+            <div class="quiz-score-item correct">
+              <span class="score-label">Corretas</span>
+              <span class="score-value" id="correct-count">0</span>
+            </div>
+            <div class="quiz-score-item incorrect">
+              <span class="score-label">Incorretas</span>
+              <span class="score-value" id="incorrect-count">0</span>
+            </div>
+          </div>
+          <button class="btn btn-primary quiz-restart-btn" id="restart-quiz-btn">
+            Tentar Novamente
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+ 
+<!-- Tooltip (fixed position, outside sections) -->
+<div class="map-tooltip" id="map-tooltip" aria-hidden="true" role="tooltip"></div>
+ 
+<footer class="site-footer" id="contact">
+  <div class="container">
+    <p>&copy; 2026 Veracity Intelligence Platform. Feito para clareza, confiança e verdade.</p>
+  </div>
+</footer>
+ 
+<!-- =====================================================================
+     MOCK DATA
+     ===================================================================== -->
+    <script src="js/mockData.js"></script>
+    <script src="js/brmap.js"></script>
+    <script src="js/quizData.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
